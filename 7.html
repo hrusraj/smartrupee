@@ -1,0 +1,60 @@
+<head>
+<title> Website </title>
+
+<link href="8.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="row">
+
+
+
+<ul class="nav">
+
+<b><li> <a href="1.html"> HOME </a> </li>
+<li> <a href="3.html" > HOW IT WORKS </a> </li>
+<li> <a href="5.html" > PLANS & SERVICES </a> </li>
+<li class="active"> <a href="7.html" > SIGN UP/LOGIN </a> </li ></b>
+</ul> 
+</div>
+<div class="bg img0" > <div class="text"  > <br><br><br>Connect With    <br> <br> <b>  Smart Rupee  </b><br><br> </div> 
+<div class="icon"> <a href="1.html"><img src="icon.png" ></a> </div> 
+<div class="log">
+<script>
+function f() {
+var user     = document.getElementById("user");
+var passcode = document.getElementById("pass");
+if((user.value=="hrusraj" && passcode.value=="6666") || (user.value=="nikhil" && passcode.value=="5790") || (user.value=="prashanth" && passcode.value=="1634"))
+{
+return true;
+}
+else
+{
+alert(" Hey..!  " + user.value + "  You Are Not A Member Of Smart Rupee Sign Up Now To Login");
+return false;
+}
+
+
+}
+</script>
+<form method="POST" action="9.html">
+<input type=text placeholder=user id=user>
+</tr>
+<br><br>
+
+<input type=password placeholder=passcode id=pass>
+
+<br>
+<br>
+<b> <button onclick="return f()"  ><b>LOGIN </b> </button></b>
+</form>
+<form action="11.html">
+<b> <button type="submit" ><b>SIGN UP </b> </button></b>
+</form>
+</div> 
+
+
+ </div>
+
+
+   </div>  

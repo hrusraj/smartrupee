@@ -1,0 +1,68 @@
+<html>
+<head>
+<title> Website </title>
+<link href="6.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+<div class="row">
+
+
+
+<ul class="nav">
+
+<b><li> <a href="1.html"> HOME </a> </li>
+<li> <a href="3.html" > HOW IT WORKS </a> </li>
+<li class="active"> <a href="5.html" > PLANS & SERVICES </a> </li>
+<li> <a href="7.html" > SIGN UP/LOGIN </a> </li ></b>
+</ul> 
+</div>
+<div class="bg img0" > <div class="text"  > <br><br>Plans In     <br> <b>  Smart Rupee  </b><br><br> <hr class="line"></div>  
+<div class="card" > <div> <br> </div> <p> <b> <div class="price1"> <br> ₹100000</div></b> <div class="i"><b><p> 6.80% Interest p.a </p> <br><hr class="line1"><br><p> 36 Months Period </p><br><hr class="line1"><br> <p>2 Chit Funder's Available </p></div> </b></p> <p> <br><br><br><a href="7.html"><button> Invest Now </button></a> </div> 
+ <div class="card1" > <div> <br> </div> <p> <b> <div class="price2"> <br> ₹1000</div></b> <div class="i"><b><p> 6.45% Interest p.a </p> <br><hr class="line1"><br><p> 24 Months Period </p><br><hr class="line1"><br> <p>1 Chit Funder's Available </p></div> </b></p> <p> <br><br><br><a href="7.html"><button> Invest Now </button></a> </div> 
+<div class="card2" > <div> <br> </div> <p> <b> <div class="price3"> <br> ₹100</div></b> <div class="i"><b><p> 6.10% Interest p.a </p> <br><hr class="line1"><br><p> 12 Months Period </p><br><hr class="line1"><br> <p>3 Chit Funder's Available </p></div> </b></p> <p> <br><br><br><a href="7.html"><button> Invest Now </button></a> </div> 
+<div class="icon"> <a href="1.html"><img src="icon.png" ></a> </div> 
+</div>
+<div class="bg img1">   <div class= "text1"> <b>Smart Rupee</b> Investment Simulator </div>         
+<div class="cal" >
+         <script language="Javascript">
+function calc()
+{
+var loan = document.sheet.l.value;
+var month = document.sheet.m.value;
+var interest  = document.sheet.i.value / 1200;
+document.sheet.emi.value  = (loan*interest/(1-(Math.pow(1/(1+interest),month)))).toFixed(2);
+var t = Math.round(document.sheet.emi.value * month * 100)/100; 
+document.sheet.t.value = Math.abs(t).toFixed(2);
+var i1 = document.sheet.t.value - loan; 
+  document.sheet.in.value =  i1.toFixed(2);
+}
+</script>
+<form name=sheet method=POST>
+<table>
+<tr>
+<td><label> Amount Of Chit (Plan)</label><br><br><b class="bo">₹</b><input type=text name=l placeholder="ex: ₹100"></td>
+<td><label> Duration (in months)</label><br> <br><input type=text name=m placeholder="ex: 12"></td>
+<td><label> Rate Of Interest p.a</label><br> <br><b class="bo1">%</b><input type=text name=i placeholder="ex: 6.50"></td>
+<td><br><br> &nbsp &nbsp &nbsp <input type=button onClick=calc() value=Calculate></td>
+</tr>
+<tr>
+<td><label> Monthly Payment  </label><br> <br><b class="bo">₹</b><input type=text name=emi value=EMI disabled="disabled" readonly></td>
+<td><label> Interest You Earn</label><br> <br><b class="bo">₹</b><input type=text name=in value=Interest readonly></td>
+<td><label> Total Money </label><br> <br><b class="bo">₹</b><input type=text name=t value=Total readonly ></td>
+<td><br><br> &nbsp &nbsp &nbsp <input type=reset value=Reset></td></tr>
+
+</form>                       
+
+
+</div>
+
+</div>
+   
+   
+   
+   </header>
+
+</body>
+</html>

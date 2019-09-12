@@ -1,0 +1,66 @@
+<head>
+<title> Website </title>
+
+<link href="12.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="row">
+
+
+
+<ul class="nav">
+
+<b><li> <a href="1.html"> HOME </a> </li>
+<li> <a href="3.html" > HOW IT WORKS </a> </li>
+<li> <a href="5.html" > PLANS & SERVICES </a> </li>
+<li class="active"> <a href="7.html" > SIGN UP/LOGIN </a> </li ></b>
+</ul> 
+</div>
+<div class="bg img0" > 
+<div class="icon"> <a href="1.html"><img src="icon.png" ></a> </div> 
+<div class="log">
+<script>
+function f() {
+var user     = document.getElementById("user");
+var passcode = document.getElementById("pass");
+var ag = document.getElementById("agree");
+if((user.value=="" || passcode.value=="" || ag.checked == false) )
+{
+alert(" NO BLANK SPACES ARE ALLOWED ");
+return false;
+}
+else
+{
+
+return true;
+}
+
+
+}
+</script>
+<form method="POST" action="9.html">
+<input type=text placeholder="enter username" id=user>
+</tr>
+<br><br>
+
+<input type=password placeholder="enter passcode" id=pass>
+
+<br>
+<br>
+
+<label class="container"> <b> I Agree </b>
+  <input type="checkbox" id=agree>
+  <span class="checkmark"></span>
+</label>
+<p class="pa"> <b>*By Signing Up You Can Temporarily Access To The Account Authorization<br> The Complete Authorization Takes Place When We Approve Your Account </b> </p>
+<br>
+<b> <button onclick="return f()"  ><b>SIGN UP </b> </button></b>
+</form>
+</div> 
+
+
+ </div>
+
+
+   </div>  
